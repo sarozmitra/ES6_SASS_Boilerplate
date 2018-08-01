@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {    
+    // 1 rem = 10px; 10px/16px = 62.5%
+    font-size: 62.5%; 
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    
+    //background: RED;
+
+    @include respond(phone-plus) {
+        // width > 600?
+        //1rem = 12, 12/16
+        font-size: 75%;
+        //background: blue;
+    }
+
+    @include respond(tab-port) {
+        // width > 900?
+        //1rem = 12, 12/16
+        font-size: 75%;
+        //background: green;
+    }
+
+    @include respond(tab-land) { 
+        // width > 1200?
+        //1rem = 12, 12/16
+        font-size: 75%;
+        //background: black;
+    } 
+    
+    @include respond(big-desktop) {
+        // width > 1200?
+        //1rem = 12, 12/16
+        font-size: 75%; 
+        //background: yellow;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    //padding: 3rem;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400; 
+    // font-size: 16px;
+    line-height: 1.7;
+    color: $color-default;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-default;
+}
+
+// [href="#main-content"] {
+//     position: absolute;
+//     top: -100px;
+//     right: 0.5em;
+//     color: #fff;
+//     font-size: 0.85em;
+// }
