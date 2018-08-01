@@ -16,7 +16,7 @@ npm -v
 ```
 npm install
 ```
-Build
+#### Build
 ```
 npm run dev
 ```
@@ -30,7 +30,6 @@ npm run test
 ```
 ### Production
 
-Compile and build
 ```
 npm run build
 ```
