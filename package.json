@@ -12,10 +12,7 @@
   "author": "Saroz Mitra",
   "license": "MIT",
   
-  "browserslist": [
-    "> 1%",
-    "ie > 9"
-  ],
+  
   "devDependencies": {
     "autoprefixer": "^9.0.2",
     "babel-core": "^6.26.3",
